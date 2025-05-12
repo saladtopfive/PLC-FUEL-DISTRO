@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel logowania - Paliwo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    .login-form, .driver-buttons {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    .hidden {
+      display: none;
+    }
+    .driver-buttons button {
+      display: block;
+      width: 200px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Logowanie do panelu paliwowego</h2>
+
+  <div class="login-form" id="login-form">
+    <label for="user">Login:</label><br>
+    <input type="text" id="user" placeholder="Wpisz imię"><br>
+    <button onclick="login()">Zaloguj</button>
+  </div>
+
+  <div class="driver-buttons hidden" id="driver-section">
+    <h3>Wybierz kierowcę</h3>
+    <button onclick="goTo('adam_awp.html')">Adam</button>
+    <button onclick="goTo('kuba_awp.html')">Kuba</button>
+    <button onclick="goTo('stachu_awp.html')">Stachu</button>
+    <button onclick="goTo('ignacy_awp.html')">Ignacy</button>
+    <button onclick="goTo('mateusz_awp.html')">Mateusz</button>
+  </div>
+
+  <script>
+    function login() {
+      var user = document.getElementById("user").value.toLowerCase();
+      if (["admin", "kierownik"].includes(user)) {
+        document.getElementById("login-form").classList.add("hidden");
+        document.getElementById("driver-section").classList.remove("hidden");
+      } else {
+        alert("Nieprawidłowy login.");
+      }
+    }
+    function goTo(file) {
+      window.location.href = file;
+    }
+  </script>
+
+</body>
+</html>
