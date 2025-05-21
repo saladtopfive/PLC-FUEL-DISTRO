@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -8,114 +7,138 @@
 <body style="font-family:sans-serif; background-color:#f4f4f4; padding:20px;">
   <h2>Panel zarządzania kierowcami</h2>
 
+  <!-- Kierowcy 1-5 -->
+  <!-- Możesz też to wygenerować dynamicznie w JS lub backendzie, ale poniżej masz statyczną wersję z poprawionymi polami -->
+  <!-- Skopiuj i zmień indeksy dla każdego kierowcy -->
+
+  <!-- Kierowca 1 -->
   <fieldset style="margin-bottom:20px; background-color:#fff; padding:15px;">
     <legend><strong>Kierowca 1</strong></legend>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[0].LOGIN' -->
     <form method="post">
       <label>Login:</label><br />
-      <input type="text" name="WEBSERVER.Users[0].LOGIN" />
+      <input type="text" name="WEBSERVER.User[0].LOGIN" />
       <input type="submit" value="Zapisz login" />
     </form>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[0].HASLO' -->
     <form method="post">
       <label>Hasło:</label><br />
-      <input type="text" name="WEBSERVER.Users[0].HASLO" />
+      <input type="text" name="WEBSERVER.User[0].HASLO" />
       <input type="submit" value="Zapisz hasło" />
     </form>
 
-    <p>Ilość paliwa wydanego: :=WEBSERVER.Users[0].ILE_PALIWA_Z:</p>
-    <p>Data wydania: :=WEBSERVER.Users[0].DATA_WYDANIA:</p>
-    <p>Stan paliwa ogółem: :=WEBSERVER.Users[0].POSIADANA_ILOSC:</p>
+    <form method="post">
+      <label>Ilość paliwa wydanego:</label><br />
+      <input type="text" name="WEBSERVER.User[0].ILE_PALIWA_Z" />
+      <input type="submit" value="Zapisz ilość" />
+    </form>
+
+    <p>Data wydania: :=WEBSERVER.User[0].DATA_WYDANIA:</p>
+    <p>Ilość paliwa wydanego: :=WEBSERVER.User[0].POSIADANA_ILOSC:</p>
   </fieldset>
 
+  <!-- Kierowca 2 -->
   <fieldset style="margin-bottom:20px; background-color:#fff; padding:15px;">
     <legend><strong>Kierowca 2</strong></legend>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[1].LOGIN' -->
     <form method="post">
       <label>Login:</label><br />
-      <input type="text" name="WEBSERVER.Users[1].LOGIN" />
+      <input type="text" name="WEBSERVER.User[1].LOGIN" />
       <input type="submit" value="Zapisz login" />
     </form>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[1].HASLO' -->
     <form method="post">
       <label>Hasło:</label><br />
-      <input type="text" name="WEBSERVER.Users[1].HASLO" />
+      <input type="text" name="WEBSERVER.User[1].HASLO" />
       <input type="submit" value="Zapisz hasło" />
     </form>
 
-    <p>Ilość paliwa wydanego: :=WEBSERVER.Users[1].ILE_PALIWA_Z:</p>
-    <p>Data wydania: :=WEBSERVER.Users[1].DATA_WYDANIA:</p>
-    <p>Stan paliwa ogółem: :=WEBSERVER.Users[1].POSIADANA_ILOSC:</p>
+    <form method="post">
+      <label>Ilość paliwa wydanego:</label><br />
+      <input type="text" name="WEBSERVER.User[1].ILE_PALIWA_Z" />
+      <input type="submit" value="Zapisz ilość" />
+    </form>
+
+    <p>Data wydania: :=WEBSERVER.User[1].DATA_WYDANIA:</p>
+    <p>Ilość paliwa wydanego: :=WEBSERVER.User[1].POSIADANA_ILOSC:</p>
   </fieldset>
 
+  <!-- Kierowca 3 -->
   <fieldset style="margin-bottom:20px; background-color:#fff; padding:15px;">
     <legend><strong>Kierowca 3</strong></legend>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[2].LOGIN' -->
     <form method="post">
       <label>Login:</label><br />
-      <input type="text" name="WEBSERVER.Users[2].LOGIN" />
+      <input type="text" name="WEBSERVER.User[2].LOGIN" />
       <input type="submit" value="Zapisz login" />
     </form>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[2].HASLO' -->
     <form method="post">
       <label>Hasło:</label><br />
-      <input type="text" name="WEBSERVER.Users[2].HASLO" />
+      <input type="text" name="WEBSERVER.User[2].HASLO" />
       <input type="submit" value="Zapisz hasło" />
     </form>
 
-    <p>Ilość paliwa wydanego: :=WEBSERVER.Users[2].ILE_PALIWA_Z:</p>
-    <p>Data wydania: :=WEBSERVER.Users[2].DATA_WYDANIA:</p>
-    <p>Stan paliwa ogółem: :=WEBSERVER.Users[2].POSIADANA_ILOSC:</p>
+    <form method="post">
+      <label>Ilość paliwa wydanego:</label><br />
+      <input type="text" name="WEBSERVER.User[2].ILE_PALIWA_Z" />
+      <input type="submit" value="Zapisz ilość" />
+    </form>
+
+    <p>Data wydania: :=WEBSERVER.User[2].DATA_WYDANIA:</p>
+    <p>Ilość paliwa wydanego: :=WEBSERVER.User[2].POSIADANA_ILOSC:</p>
   </fieldset>
 
+  <!-- Kierowca 4 -->
   <fieldset style="margin-bottom:20px; background-color:#fff; padding:15px;">
     <legend><strong>Kierowca 4</strong></legend>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[3].LOGIN' -->
     <form method="post">
       <label>Login:</label><br />
-      <input type="text" name="WEBSERVER.Users[3].LOGIN" />
+      <input type="text" name="WEBSERVER.User[3].LOGIN" />
       <input type="submit" value="Zapisz login" />
     </form>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[3].HASLO' -->
     <form method="post">
       <label>Hasło:</label><br />
-      <input type="text" name="WEBSERVER.Users[3].HASLO" />
+      <input type="text" name="WEBSERVER.User[3].HASLO" />
       <input type="submit" value="Zapisz hasło" />
     </form>
 
-    <p>Ilość paliwa wydanego: :=WEBSERVER.Users[3].ILE_PALIWA_Z:</p>
-    <p>Data wydania: :=WEBSERVER.Users[3].DATA_WYDANIA:</p>
-    <p>Stan paliwa ogółem: :=WEBSERVER.Users[3].POSIADANA_ILOSC:</p>
+    <form method="post">
+      <label>Ilość paliwa wydanego:</label><br />
+      <input type="text" name="WEBSERVER.User[3].ILE_PALIWA_Z" />
+      <input type="submit" value="Zapisz ilość" />
+    </form>
+
+    <p>Data wydania: :=WEBSERVER.User[3].DATA_WYDANIA:</p>
+    <p>Ilość paliwa wydanego: :=WEBSERVER.User[3].POSIADANA_ILOSC:</p>
   </fieldset>
 
+  <!-- Kierowca 5 -->
   <fieldset style="margin-bottom:20px; background-color:#fff; padding:15px;">
     <legend><strong>Kierowca 5</strong></legend>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[4].LOGIN' -->
     <form method="post">
       <label>Login:</label><br />
-      <input type="text" name="WEBSERVER.Users[4].LOGIN" />
+      <input type="text" name="WEBSERVER.User[4].LOGIN" />
       <input type="submit" value="Zapisz login" />
     </form>
 
-    <!-- AWP_In_Variable Name='WEBSERVER.Users[4].HASLO' -->
     <form method="post">
       <label>Hasło:</label><br />
-      <input type="text" name="WEBSERVER.Users[4].HASLO" />
+      <input type="text" name="WEBSERVER.User[4].HASLO" />
       <input type="submit" value="Zapisz hasło" />
     </form>
 
-    <p>Ilość paliwa wydanego: :=WEBSERVER.Users[4].ILE_PALIWA_Z:</p>
-    <p>Data wydania: :=WEBSERVER.Users[4].DATA_WYDANIA:</p>
-    <p>Stan paliwa ogółem: :=WEBSERVER.Users[4].POSIADANA_ILOSC:</p>
+    <form method="post">
+      <label>Ilość paliwa wydanego:</label><br />
+      <input type="text" name="WEBSERVER.User[4].ILE_PALIWA_Z" />
+      <input type="submit" value="Zapisz ilość" />
+    </form>
+
+    <p>Data wydania: :=WEBSERVER.User[4].DATA_WYDANIA:</p>
+    <p>Ilość paliwa wydanego: :=WEBSERVER.User[4].POSIADANA_ILOSC:</p>
   </fieldset>
 
 </body>
